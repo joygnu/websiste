@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socials Joy</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #282828;
+            color: #fff;
+            font-size: 22px;
+        }
+
+        .container {
+            max-width: 1050px;
+            margin: 36px auto;
+            padding: 19px;
+            border-radius: 17px;
+            font-size: 1.3em;
+        }
+
+        h1 {
+            text-align: center;
+            color: #458588;
+            font-size: 3.5em;
+        }
+
+        ul {
+            list-style: none;
+            text-align: center;
+            margin: 23px 0;
+        }
+
+        ul li {
+            margin-bottom: 19px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 18px 28px;
+            display: inline-block;
+            background-color: #458588;
+            transition: background-color 0.3s;
+            border-radius: 14px;
+            font-size: 1.6em;
+        }
+
+        ul li a:hover {
+            background-color: #5e9ea0;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                font-size: 16.2px; /* 18px * 0.9 = 16.2px (10% smaller) */
+            }
+            .container {
+                margin: 25.2px auto; /* 28px * 0.9 = 25.2px */
+                padding: 12.6px; /* 14px * 0.9 = 12.6px */
+                border-radius: 12.6px; /* 14px * 0.9 = 12.6px */
+            }
+            h1 {
+                font-size: 2.7em; /* 3em * 0.9 = 2.7em */
+            }
+            ul li a {
+                font-size: 1.26em; /* 1.4em * 0.9 = 1.26em */
+                padding: 16.2px 23.4px; /* 18px * 0.9 and 26px * 0.9 */
+            }
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            position: fixed;
+            bottom: 18px;
+            right: 18px;
+        }
+
+        .social-icons img {
+            width: 48px;
+            height: 48px;
+            filter: invert(100%) brightness(200%);
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 78%;
+            max-width: 390px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="linux.webp" alt="Linux Logo">
+        <h1>Socials Joy</h1>
+        <ul>
+            <li><a href="https://codeberg.org/joygnu" target="_blank" rel="noopener noreferrer">Codeberg</a></li>
+            <li><a href="https://github.com/joygnu" target="_blank" rel="noopener noreferrer">Github</a></li>
+            <li><a href="https://discord.com/users/580999203187195913" target="_blank" rel="noopener noreferrer">Discord</a></li>
+            <li><a href="https://steamcommunity.com/profiles/76561199238796088" target="_blank" rel="noopener noreferrer">Steam</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="https://git.joygnu.org/explore" aria-label="Git Repository" target="_blank" rel="noopener noreferrer"><img src="icons/git-alt.svg" alt="Git"></a>
+            <a href="mailto:contact@joygnu.org" aria-label="Email"><img src="icons/envelope.svg" alt="Email"></a>
+        </div>
+    </div>
+</body>
+</html>
