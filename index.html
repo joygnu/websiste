@@ -4,31 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joygnu's Website シ</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #282828;
+            color: #D5C4A1;
+            font-size: 22px;
+            text-align: center;
+        }
+        .button {
+            text-decoration: none;
+            color: #D5C4A1;
+            padding: 18px 28px;
+            background-color: #458588;
+            border-radius: 10px;
+            font-size: 1.4em;
+            display: inline-block;
+            box-shadow: 4px 4px 8px #3C3836, -4px -4px 8px #3C3836; /* Cartoonish shadow effect */
+            transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+        }
+        .button:hover {
+            background-color: #357a7c; /* Slightly darker blue on hover */
+            box-shadow: 6px 6px 12px #3C3836, -6px -6px 12px #3C3836; /* Darker shadow on hover */
+        }
+        .footer-icons img {
+            width: 48px;
+            height: 48px;
+            filter: invert(0.9) sepia(0.5) saturate(1.5) hue-rotate(80deg) brightness(1.2) contrast(0.9);    </style>
 </head>
-<body style="font-family: 'Roboto', sans-serif; background-color: #282828; color: #fff; font-size: 22px; text-align: center;">
+<body>
     <div style="max-width: 1000px; margin: 20px auto; padding: 20px; border-radius: 18px;">
-        <img src="linux.webp" alt="Linux Logo" style="display: block; margin: 0 auto;  max-width: 400px;">
-        <h1 style="color: #458588; font-size: 2.6em;">JOYGNU</h1>
+        <img src="linux.webp" alt="Linux Logo" style="display: block; margin: 0 auto; max-width: 400px;">
+        <section style="margin: 40px 0;">
+            <h2 style="color: #458588; font-size: 2em;">About Me</h2>
+            <p style="font-size: 1.2em; max-width: 800px; margin: 0 auto;">
+                Hi, I'm Joy. I'm interested in GNU/Linux, especially NixOS. I also enjoy self-hosting. 
+            </p>
+        </section>
         <ul style="list-style: none; margin: 24px 0; padding: 0;">
             <li style="margin-bottom: 20px;">
-                <a href="https://4get.joygnu.org"  style="text-decoration: none; color: #fff; padding: 18px 28px; background-color: #458588; border-radius: 10px; font-size: 1.4em; display: inline-block;">4get</a>
+                <a href="https://4get.joygnu.org" class="button">4get</a>
             </li>
             <li style="margin-bottom: 20px;">
-                <a href="https://wallpapers.joygnu.org/"  style="text-decoration: none; color: #fff; padding: 18px 28px; background-color: #458588; border-radius: 10px; font-size: 1.4em; display: inline-block;">Wallpapers</a>
+                <a href="https://wallpapers.joygnu.org/" class="button">Wallpapers</a>
             </li>
             <li style="margin-bottom: 20px;">
-                <a href="https://ping.joygnu.org/"  style="text-decoration: none; color: #fff; padding: 18px 28px; background-color: #458588; border-radius: 10px; font-size: 1.4em; display: inline-block;">Ping</a>
+                <a href="https://ping.joygnu.org/" class="button">Ping</a>
             </li>
             <li style="margin-bottom: 20px;">
-                <a href="https://codeberg.org/joygnu"   style="text-decoration: none; color: #fff; padding: 18px 28px; background-color: #458588; border-radius: 10px; font-size: 1.4em; display: inline-block;">Codeberg</a>
+                <a href="https://codeberg.org/joygnu" class="button">Codeberg</a>
             </li>
         </ul>
-        <div style="display: flex; justify-content: center; gap: 18px; position: fixed; bottom: 18px; right: 18px;">
+
+        <div class="footer-icons" style="display: flex; justify-content: center; gap: 18px; position: fixed; bottom: 18px; right: 18px;">
             <a href="https://git.joygnu.org/explore" aria-label="Git Repository" target="_blank" rel="noopener noreferrer">
-                <img src="icons/git-alt.svg" alt="Git" style="width: 48px; height: 48px; filter: invert(100%) brightness(200%);">
+                <img src="icons/git-alt.svg" alt="Git">
             </a>
             <a href="mailto:contact@joygnu.org" aria-label="Email">
-                <img src="icons/envelope.svg" alt="Email" style="width: 48px; height: 48px; filter: invert(100%) brightness(200%);">
+                <img src="icons/envelope.svg" alt="Email">
             </a>
         </div>
     </div>
