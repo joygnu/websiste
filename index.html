@@ -5,31 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joy's Website シ</title>
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #282828;
-            color: #D5C4A1;
-            font-size: 22px;
-            text-align: center;
-        }
-        .button {
-            text-decoration: none;
-            color: #D5C4A1;
-            padding: 18px 28px;
-            background-color: #458588;
-            border-radius: 10px;
-            font-size: 1.4em;
-            display: inline-block;
-            box-shadow: 4px 4px 8px #3C3836, -4px -4px 8px #3C3836;
-            transition: background-color 0.3s, box-shadow 0.3s;
-        }
-        .button:hover {
-            background-color: #357a7c;
-            box-shadow: 6px 6px 12px #3C3836, -6px -6px 12px #3C3836;
-        }
-        .footer-icons img {
-            width: 48px;
-            height: 48px;
+        body {font-family: 'Roboto', sans-serif; background-color: #282828; color: #D5C4A1; font-size: 22px; text-align: center; margin: 0; padding: 0;}
+        .button {text-decoration: none; color: #D5C4A1; padding: 18px 28px; background-color: #458588; border-radius: 10px; font-size: 1.4em; display: inline-block; box-shadow: 4px 4px 8px #3C3836, -4px -4px 8px #3C3836; transition: background-color 0.3s, box-shadow 0.3s;}
+        .button:hover {background-color: #357a7c; box-shadow: 6px 6px 12px #3C3836, -6px -6px 12px #3C3836;}
+        .footer-icons img {width: 48px; height: 48px;}
+        @media (max-width: 600px) {
+            .button {font-size: 1.2em; padding: 14px 20px;}
+            h2 {font-size: 2em;}
+            p {font-size: 1.1em; margin: 0 auto 30px auto;}
+            .footer-icons img {width: 40px; height: 40px;}
         }
     </style>
 </head>
@@ -38,9 +22,7 @@
         <img src="linux.webp" alt="Linux Logo" style="display: block; margin: 0 auto; max-width: 400px;">
         <section style="margin: 40px 0;">
             <h2 style="color: #458588; font-size: 2em;">About Me</h2>
-            <p style="font-size: 1.2em; max-width: 800px; margin: 0 auto;">
-                Hi, I'm Joy. I'm interested in GNU/Linux, especially NixOS. I also enjoy self-hosting.
-            </p>
+            <p style="font-size: 1.2em; max-width: 800px; margin: 0 auto;">Hi, I'm Joy. I'm interested in GNU/Linux, especially NixOS. I also enjoy self-hosting.</p>
         </section>
         <ul style="list-style: none; margin: 24px 0; padding: 0;">
             <li style="margin-bottom: 20px;"><a href="https://4get.joygnu.org" class="button">4get</a></li>
@@ -49,12 +31,8 @@
             <li style="margin-bottom: 20px;"><a href="https://codeberg.org/joygnu" class="button">Codeberg</a></li>
         </ul>
         <div class="footer-icons" style="display: flex; justify-content: center; gap: 18px; position: fixed; bottom: 18px; right: 18px;">
-            <a href="https://git.joygnu.org/explore" aria-label="Git Repository" target="_blank" rel="noopener noreferrer">
-                <img src="icons/git-alt.svg" alt="Git">
-            </a>
-            <a href="mailto:contact@joygnu.org" aria-label="Email">
-                <img src="icons/envelope.svg" alt="Email">
-            </a>
+            <a href="https://git.joygnu.org/explore" aria-label="Git Repository" target="_blank" rel="noopener noreferrer"><img src="icons/git-alt.svg" alt="Git"></a>
+            <a href="mailto:contact@joygnu.org" aria-label="Email"><img src="icons/envelope.svg" alt="Email"></a>
         </div>
     </div>
 </body>
