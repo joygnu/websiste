@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entschuldigung</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            color: #e74c3c;
+        }
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        .signature {
+            margin-top: 30px;
+            font-style: italic;
+        }
+        #date-picker {
+            margin: 20px 0;
+        }
+        #message {
+            font-size: 1.2em;
+            color: #2c3e50;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        button:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Entschuldigung</h1>
+        <p>Sehr geehrter Herr Tran,</p>
+        <p id="apology-message">ich möchte mich hiermit entschuldigen, da ich am Freitag krank sein werde und nicht an dem geplanten Termin teilnehmen kann. Es tut mir leid für die Unannehmlichkeiten, die dies verursachen könnte.</p>
+        <p>Ich werde mein Bestes tun, um sicherzustellen, dass ich alle nötigen Aufgaben nachhole und hoffe auf Ihr Verständnis.</p>
+        <p>Vielen Dank für Ihr Verständnis.</p>
+        <p class="signature">Mit freundlichen Grüßen,<br>Joy Marti</p>
+        <div id="date-picker">
+            <label for="date">Wählen Sie das Datum:</label>
+            <input type="date" id="date" name="date">
+        </div>
+        <button onclick="updateApology()">Aktualisieren</button>
+        <p id="message"></p>
+    </div>
+    <script>
+        function updateApology() {
+            const dateInput = document.getElementById('date').value;
+            const apologyMessage = document.getElementById('apology-message');
+            const message = document.getElementById('message');
+
+            if (dateInput) {
+                apologyMessage.textContent = `Ich möchte mich hiermit entschuldigen, da ich am ${formatDate(dateInput)} krank sein werde und nicht an dem geplanten Termin teilnehmen kann. Es tut mir leid für die Unannehmlichkeiten, die dies verursachen könnte.`;
+                message.textContent = `Das Datum wurde auf ${formatDate(dateInput)} aktualisiert.`;
+            } else {
+                message.textContent = 'Bitte wählen Sie ein Datum aus.';
+            }
+        }
+
+        function formatDate(dateString) {
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            return new Date(dateString).toLocaleDateString('de-DE', options);
+        }
+    </script>
+</body>
+</html>
