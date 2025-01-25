@@ -1,55 +1,100 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Joy's Website シ</title>
-    <style>
-        body {font-family: 'Roboto', sans-serif; background-color: #282828; color: #D5C4A1; font-size: 24px; text-align: center; margin: 0; padding: 0;}
-        .button {text-decoration: none; color: #D5C4A1; padding: 13px 26px; background-color: #458588; border-radius: 8px; font-size: 1.25em; display: inline-block; box-shadow: 3px 3px 6px #3C3836, -3px -3px 6px #3C3836; transition: background-color 0.3s, box-shadow 0.3s;}
-        .button:hover {background-color: #357a7c; box-shadow: 4px 4px 8px #3C3836, -4px -4px 8px #3C3836;}
-        .footer-icons img {width: 52px; height: 52px;}
-        @media (max-width: 600px) {
-            .button {font-size: 1.05em; padding: 11px 22px;}
-            h2 {font-size: 2em;}
-            p {font-size: 1em; margin: 0 auto 20px auto;}
-            .footer-icons img {width: 44px; height: 44px;}
-        }
-    </style>
-</head>
-<body>
-    <div style="max-width: 1200px; margin: 10px auto; padding: 20px; border-radius: 20px;">
-        <section style="margin: 30px 0;">
-            <p style="font-size: 1em; max-width: 960px; margin: 0 auto 20px auto;">Hi, I'm Joy. I care about privacy, which is why I host a few alternative front-ends and other privacy-focused services.</p>
-        </section>
-        <ul style="list-style: none; margin: 40px 0; padding: 0;">
-            <li style="margin-bottom: 20px;"><a href="https://4get.joygnu.org" class="button">4get</a></li>
-            <li style="margin-bottom: 20px;"><a href="https://yt.joygnu.org/" class="button">Invidious</a></li>
-            <li style="margin-bottom: 20px;"><a href="https://git.joygnu.org/" class="button">Forgejo</a></li>
-            <li style="margin-bottom: 20px;"><a href="https://pin.joygnu.org/" class="button">Binternet</a></li>
-            <li style="margin-bottom: 20px;"><a href="https://trans.joygnu.org/" class="button">SimplyTranslate</a></li>
-        </ul>
-        <div class="footer-icons" style="display: flex; justify-content: center; gap: 15px; position: fixed; bottom: 10px; right: 10px;">
-            <a href="https://git.joygnu.org/joy/www.joygnu.org" aria-label="Git Repository" target="_blank" rel="noopener noreferrer"><img src="icons/git-alt.svg" alt="Git"></a>
-            <a href="mailto:contact@joygnu.org" aria-label="Email"><img src="icons/envelope.svg" alt="Email"></a>
-        </div>
-    <a href="https://xn--xck.xyz" target="_blank">
-      <img src="icons/linux.webp" alt="Linux Logo" style="display: block; margin: 0 auto; max-width: 530px;"> 
-    </div>
-
-  <hr color="#D5C4A1">
-    <a href="https://yt.joygnu.org/watch?v=qCFP9P7lIvI">
-      <img src="icons/right2repair.gif">
-    </a>
-    <a href="https://tosdr.org/en">
-      <img src="icons/notread.gif">
-    </a>
-    <a href="https://nginx.org">
-      <img src="icons/nginx.png">
-    </a>
-    <a href="https://ublockorigin.com/">
-      <img src="icons/ublock.png">
-    </a>
-
-</html>
-</body>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width">
+   <title>Joy's Website シ</title>
+   <style>
+      body {
+         font-family: 'Roboto', sans-serif;
+         background-color: #282828;
+         color: #D5C4A1;
+         font-size: 20px;
+         text-align: center;
+         margin: 0;
+         padding: 0;
+      }
+      .button {
+         text-decoration: none;
+         color: #D5C4A1;
+         padding: 10px 20px;
+         background-color: #458588;
+         border-radius: 5px;
+         font-size: 1em;
+         display: inline-block;
+         margin-top: 10px;
+      }
+      .footer-icons img {
+         width: 50px;
+         height: 50px;
+      }
+      .service {
+         margin: 20px 0;
+         text-align: left;
+         max-width: 600px;
+         margin-left: auto;
+         margin-right: auto;
+         padding: 15px;
+         border: 1px solid #D5C4A1;
+         border-radius: 10px;
+      }
+      .service h3 {
+         margin: 5px 0;
+         font-size: 1.2em;
+         color: #83a598;
+      }
+      .service p {
+         font-size: 0.9em;
+         line-height: 1.5;
+         margin: 10px 0;
+      }
+   </style>
+   <body>
+      <div class="footer-icons" style="display: flex; justify-content: center; gap: 15px; position: fixed; top: 10px; right: 10px;">
+         <a href="https://git.joygnu.org/joy/www.joygnu.org" aria-label="Git Repository" target="_blank" rel="noopener noreferrer"><img src="icons/git-alt.svg"></a>
+         <a href="mailto:contact@joygnu.org" aria-label="Email"><img src="icons/envelope.svg"></a>
+      </div>
+         <a href="https://xn--xck.xyz" target="_blank" rel="noopener noreferrer">
+         <img src="icons/linux.webp">
+         </a>
+      <div style="max-width: 1200px; margin: 10px auto; padding: 20px; border-radius: 20px;">
+         <section style="margin: 30px 0;">
+            <p>Hi, I'm Joy. I care about privacy, which is why I host a few alternative front-ends and other privacy-focused services.</p>
+         </section>
+         <div class="service">
+            <p>A front-end for search engines like Google, DuckDuckGo, and Wiby.</p>
+            <a href="https://4get.joygnu.org" class="button">4get</a>
+         </div>
+         <div class="service">
+            <p>An alternative front-end for YouTube.</p>
+            <a href="https://yt.joygnu.org/" class="button">Invidious</a>
+         </div>
+         <div class="service">
+            <p>A lightweight Git hosting platform.</p>
+            <a href="https://git.joygnu.org/" class="button">Forgejo</a>
+         </div>
+         <div class="service">
+            <p>A alternative front-end for using Pinterest.</p>
+            <a href="https://pin.joygnu.org/" class="button">Binternet</a>
+         </div>
+         <div class="service">
+            <p>A alternative  front-end for translation services.</p>
+            <a href="https://trans.joygnu.org/" class="button">SimplyTranslate</a>
+         </div>
+         <hr color="#D5C4A1" style="margin: 40px 0;">
+         <a href="https://yt.joygnu.org/watch?v=qCFP9P7lIvI">
+         <img src="icons/right2repair.gif">
+         </a>
+         <a href="https://tosdr.org/en">
+         <img src="icons/notread.gif">
+         </a>
+         <a href="https://nginx.org">
+         <img src="icons/nginx.png">
+         </a>
+         <a href="https://ublockorigin.com/">
+         <img src="icons/ublock.png">
+         </a>
+         <a href="https://wiby.org/">
+         <img src="icons/wiby.org.gif">
+         </a>
+      </div>
+   </body>
 </html>
